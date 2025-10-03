@@ -10,7 +10,7 @@ import numpyLogo from '../assets/skills_icons/NumPy.png';
 import pycharmLogo from '../assets/skills_icons/PyCharm.png';
 import pythonLogo from '../assets/skills_icons/Python.png';
 import reactLogo from '../assets/skills_icons/React.png';
-import seleniumLogo from '../assets/skills_icons/Selenium.png';
+import seleniumLogo from '../assets/skills_icons/selenium.png';
 import tailwindLogo from '../assets/skills_icons/Tailwind.png';
 import vscodeLogo from '../assets/skills_icons/Vscode.png';
 import html5Logo from '../assets/skills_icons/HTML5.png';
