@@ -85,14 +85,14 @@ export function ProjectCard({ title, description, techStack, image, github, link
 export default function Projects () {
   
 
-  return (<div className=' h-screen'>
+  return (<div>
     <Navbar/>
     
     <section id="projects" className="flex flex-col justify-around h-[90vh]   " >
       
-      <div className="flex overflow-x-auto space-x-4 p-4 scroll-smooth rounded-xl hide-scrollbar">
+      <div className="flex overflow-x-auto space-x-4 p-4 scroll-smooth rounded-xl hide-scrollbar ">
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <div className='w-60 h-70  flex flex-col justify-center items-center '>
+          <div className='w-60 h-70  flex flex-col justify-center items-center  '>
             <img src={rocket} alt="" className='-rotate-50 h-50 w-50' />
             <div className='text-[#eb5e28] text-4xl font-bold'>SWIPE</div>
           </div>

@@ -77,7 +77,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex md:text-[0.9rem] lg:text-[1rem] flex-wrap justify-between items-center shadow-md dark:shadow-[#d0ad96e7] bg-white dark:bg-gray-600 mx-auto mt-0 md:mt-5 rounded-sm py-0 px-2 md:p-0 md:h-11 w-11/12 md:w-5/6 lg:w-4/5 xl:w-5xl font-semibold">
+      <nav className="flex md:text-[0.9rem] lg:text-[1rem] flex-wrap justify-between items-center shadow-md dark:ring-1 dark:ring-[#eb5e28] bg-white dark:bg-[#203c56] mx-auto mt-0 md:mt-5 rounded-sm py-0 px-2 md:p-0 md:h-11 w-11/12 md:w-5/6 lg:w-4/5 xl:w-5xl font-semibold">
         {/* Logo */}
         <Link to="/"  className="logo text-lg md:text-xl mx-2">&lt;AB/&gt;</Link>
 
