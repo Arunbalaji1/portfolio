@@ -1,4 +1,4 @@
-import Header from "./navbar";
+
 import bootstrapLogo from '../assets/skills_icons/Bootstrap.png';
 import css3Logo from '../assets/skills_icons/CSS3.png';
 import eclipseLogo from '../assets/skills_icons/Eclipse.png';
@@ -19,6 +19,7 @@ import javascriptLogo from '../assets/skills_icons/JavaScript.png';
 import jupyterLogo from '../assets/skills_icons/Jupyter.png';
 import matplotlibLogo from '../assets/skills_icons/Matplotlib.png';
 import pandasLogo from '../assets/skills_icons/Pandas.png';
+import Navbar from "./navbar";
 
 export  function ImgBox({logo,alt}){
     return(<div className="img_box  h-18 sm:h-10 md:h-15 lg:h-15 xl:h-18 2xl:h-20 w-18 sm:w-10 md:w-15 lg:w-15 xl:w-18 2xl:w-20 p-2 flex flex-col justify-center shadow-[inset_3px_3px_6px_0px_rgb(204,219,232),inset_-3px_-3px_6px_1px_rgba(255,255,255,0.5)]  bg-white  dark:bg-[#203c56]   rounded-lg">
@@ -30,11 +31,11 @@ export  function ImgBox({logo,alt}){
 
 export default function Skill(){
   return<>
-   <Header/>
+   <Navbar/>
    
     
 
-   <section className="col-span-12 skills flex flex-col pt-5  pb-8 h-fit  items-center gap-4 mt-2">
+   <section className="   col-span-12 skills flex flex-col pt-5  pb-8 h-fit  items-center gap-4 mt-2">
     
     <div className="grid  grid-cols-7 bg-gradient-to-b sm:bg-gradient-to-r from-[rgb(235,94,40)] via-[rgb(241,131,91)] to-[rgb(239,198,183)]  dark:via-[rgba(128,63,42,0.19)] dark:to-[#14202b] rounded-md p-1   m-2 sm:m-0 h-fit sm:h-[25vh] w-[80vw] sm:w-[90vw] ">
       <div className="sm:col-span-2 col-span-7 flex justify-center items-center">
