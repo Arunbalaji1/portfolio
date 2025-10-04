@@ -94,7 +94,7 @@ export  function Form() {
         <label className="font-semibold " htmlFor="name">Name:</label>
         <br />
         <input
-          className=" bg-white dark:bg-white/30 rounded-md p-2 w-full  mb-2  outline-[#eb5e28]/50"
+          className=" bg-white dark:bg-white/30 rounded-md p-2 w-full  mb-2 dark:focus:outline-[#eb5e28]/90 dark:focus:outline-2 outline-[#eb5e28]/50  "
           name="name"
           placeholder="Your Name"
           value={form.name}
@@ -105,7 +105,7 @@ export  function Form() {
         <label className="font-semibold " htmlFor="email">Email:</label>
         <br />
         <input
-          className="bg-white dark:bg-white/30 rounded-md p-2 w-full  mb-2  outline-[#eb5e28]/50"
+          className="bg-white dark:bg-white/30 rounded-md p-2 w-full  mb-2 dark:focus:outline-[#eb5e28]/90 dark:focus:outline-2 outline-[#eb5e28]/50"
           type="email"
           name="email"
           placeholder="Your Email"
@@ -117,7 +117,7 @@ export  function Form() {
         <label className="font-semibold " htmlFor="message">Message:</label>
         <br />
         <textarea
-          className="bg-white dark:bg-white/30 rounded-md p-2 w-full h-30 mb-2  outline-[#eb5e28]/50"
+          className="bg-white dark:bg-white/30 rounded-md p-2 w-full h-30 mb-2 dark:focus:outline-[#eb5e28]/90 dark:focus:outline-2 outline-[#eb5e28]/50"
           name="message"
           placeholder="Your Message"
           value={form.message}

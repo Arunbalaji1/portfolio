@@ -9,7 +9,7 @@ import react from "../assets/certificates/react.jpg"
 
 export function CardItem({ image, text, link }){
   return (
-    <div className="col-span-1 transition duration-300 hover:border-black dark:hover:border-amber-100 p-3 mx-auto h-[90vw] w-[90vw] md:h-70 md:w-85 border-2 border-[#eb5e28] rounded-lg dark:bg-white/10 bg-black/30 hover:bg-[#f3703c] backdrop-blur-[0px] z-1">
+    <div className="col-span-1 transition duration-300 md:hover:border-black md:dark:hover:border-amber-100 p-3 mx-auto h-[90vw] w-[90vw] md:h-70 md:w-85 border-2 md:border-[#eb5e28] rounded-lg md:dark:bg-white/10 md:bg-black/30 bg-[#eb5e28]/50 md:hover:bg-[#f3703c] backdrop-blur-[2px] md:backdrop-blur-[0px] z-1">
       <a href={link} target="_blank">
         <div className="h-[80%] w-full mb-2 ">
         <img src={image} alt="Card visual" className=" w-full h-full object-cover rounded-md " />
@@ -41,6 +41,9 @@ export default function Feat(){
         
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-30   gap-x-0 h-[80vh] place-items-center scroll-smooth overflow-y-auto p-4 mt-8 hide-scrollbar relative">
         
+        <div className="md:hidden col-span-1r  mx-auto h-[10vw] w-[90vw]  ">
+      
+       </div>
         <CardItem 
         image="https://picsum.photos/600/360"
         text="Python programming"
