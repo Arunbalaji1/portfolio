@@ -98,26 +98,26 @@ export default function Projects () {
       <div className="flex overflow-x-auto space-x-4 p-4 scroll-smooth rounded-xl hide-scrollbar ">
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
           <div className='w-60 h-70  flex flex-col justify-center items-center  '>
-            <img src={rocket} alt="" className='-rotate-50 h-50 w-50' />
+            <img src={rocket} alt="" className='-rotate-50 h-50 w-50 animate-floatZ' />
             <div className='text-[#eb5e28] text-4xl font-extrabold font-sans'>SWIPE</div>
           </div>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-top h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Vortex Fitness" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['HTML', 'CSS','Bootstrap','Javascript']} image={vortexfitness} github="https://github.com/Arunbalaji1/Vortex-Fittness-Project" link="https://arunbalaji-vortexfitness.web.app/"/>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Bing Job Scraper" description="Bing Job Scraper is a Python tool that uses Selenium to fetch job listings from Bing and saves them in a files." techStack={['Python', 'Selenium', 'Pytest']} image={bing_scraper} github="https://github.com/Arunbalaji1/job-automation-suite" link="https://github.com/Arunbalaji1/job-automation-suite"/>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-top h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Rock Paper Scissor" description="Rock Paper Scissor is a web game where you compete against the computer." techStack={['HTML','CSS',  'Javascript','Netlify']} image={rps} github="https://github.com/Arunbalaji1/rock-papper-scissor" link="https://arunbalaji-rpsgame.netlify.app/"/>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Portfolio" description="Portfolio is a modern, responsive website built with React to showcase my projects, skills, and experience." techStack={['React','Tailwind','Firebase']} image={portfolio} github="https://github.com/Arunbalaji1/portfolio" link="https://arunbalajideveloper.web.app/"/>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-top h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Ecomerse automation" description="Automated e-commerce user flows (login, search, cart, checkout) using Python and Selenium." techStack={['Python', 'Selenium', 'Pytest']} image={selenium_ecommerce} github="https://github.com/Arunbalaji1/SeleniumEcommerceProject" link="https://github.com/Arunbalaji1/SeleniumEcommerceProject"/>
         </div>
-        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+        <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="L T S" description="A responsive restaurant website built with HTML and CSS, representing my first  web development project." techStack={['HTML', 'CSS', 'Javascript', 'Netlify']} image={LTS} github="https://littletaccoshop.netlify.app/" link="https://littletaccoshop.netlify.app/"/>
         </div>
       </div>

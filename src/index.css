@@ -46,6 +46,188 @@ nav button{
   background-color: #eb5e28;
 }
 
+/* Animation */
+/* sliding */
+/* slide left */
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 1.5s ease-out forwards;
+}
+
+/* slide right */
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-right {
+  animation: slide-right 1.5s ease-out forwards;
+}
+
+/* slide top */
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-top {
+  animation: slide-top 1.5s ease-out forwards;
+}
+
+/* slide bottom */
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-bottom {
+  animation: slide-bottom 1.5s ease-out forwards;
+}
+
+/* slid-right-dia */
+@keyframes slide-rightcor {
+  0% {
+    transform: translate(-100%,-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-rightcor {
+  animation: slide-rightcor 1.5s ease-out forwards;
+}
+/* slid-left-dia */
+@keyframes slide-leftcor {
+  0% {
+    transform: translate(100%,100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-leftcor {
+  animation: slide-leftcor 1.5s ease-out forwards;
+}
+
+/* fade in*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-in forwards;
+}
+
+/* fade out*/
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 3s ease-out forwards;
+}
+
+
+/* floating */
+/* Float-y */
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+   
+  }
+  50% {
+    transform: translateY(-20px);
+   
+  }
+}
+
+.animate-floatY {
+  animation: floaty 2.5s ease-in-out infinite;
+}
+/* Float-y-mild */
+
+
+@keyframes mildfloat {
+  0%, 100% {
+    transform: translateY(0);
+    
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+
+.animate-floatmild {
+  animation: mildfloat 2s ease-in-out infinite;
+}
+
+/* Float-z[for rotated rocket] */
+@keyframes floatz {
+  0%, 100% {
+    transform: translate(0,0);
+   
+  }
+  50% {
+    transform: translate(-20px,-20px);
+   
+  }
+}
+
+.animate-floatZ {
+  animation: floatz 2.5s ease-in-out infinite;
+}
+
+
 
 /* scroll bar hide */
 .hide-scrollbar::-webkit-scrollbar {

@@ -13,7 +13,7 @@ import SQL_workshop from "../assets/certificates/SQL_workshop.jpg"
 
 export function CardItem({ image, text, link }){
   return (
-    <div className="col-span-1 transition duration-300 md:hover:border-black md:dark:hover:border-amber-100 p-3 mx-auto h-[90vw] w-[90vw] md:h-70 md:w-85 border-2 md:border-[#eb5e28] rounded-lg md:dark:bg-white/10 md:bg-black/30 bg-[#eb5e28]/50 md:hover:bg-[#f3703c] backdrop-blur-[2px] md:backdrop-blur-[0px] z-1">
+    <div className="animate-fade-in col-span-1 transition duration-300 md:hover:border-black md:dark:hover:border-amber-100 p-3 mx-auto h-[90vw] w-[90vw] md:h-70 md:w-85 border-2 md:border-[#eb5e28] rounded-lg md:dark:bg-white/10 md:bg-black/30 bg-[#eb5e28]/50 md:hover:bg-[#f3703c] backdrop-blur-[2px] md:backdrop-blur-[0px] z-1">
       <a href={link} target="_blank">
         <div className="h-[80%] w-full mb-2 ">
         <img src={image} alt="Card visual" className=" w-full h-full object-cover rounded-md " />
@@ -34,7 +34,7 @@ export default function Feat(){
     <div>
       <Navbar current={"feats"} />
       <div className="absolute  md:top-70 top-[45%] left-[calc(50%-22.5vw)] md:left-[calc(50%-7.5vw)] ">
-        <img src={dart} alt="dart_board_img" className="h-[45vw] w-[45vw]   md:h-[15vw] md:w-[15vw]  -z-3" />
+        <img src={dart} alt="dart_board_img" className=" animate-floatY  h-[45vw] w-[45vw]   md:h-[15vw] md:w-[15vw]  -z-3" />
       </div>
       <div className="absolute   top-40 left-10 ">
         <div className="text-black/50 dark:text-white/50 text-6xl font-extrabold md:font-extrabold md:text-9xl font-sans  ">Scroll</div>
