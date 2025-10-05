@@ -4,7 +4,11 @@ import figma from "../assets/certificates/figma.jpg"
 import sql from "../assets/certificates/sql.jpg"
 import python from "../assets/certificates/python.jpg"
 import react from "../assets/certificates/react.jpg"
-
+import ski from "../assets/certificates/ski.jpg"
+import verbalcommunication from "../assets/certificates/verbalcommunication.jpg"
+import Maths_competition from "../assets/certificates/Maths_competition.jpg"
+import Python_quiz from "../assets/certificates/Python_quiz.jpg"
+import SQL_workshop from "../assets/certificates/SQL_workshop.jpg"
 
 
 export function CardItem({ image, text, link }){
@@ -14,8 +18,8 @@ export function CardItem({ image, text, link }){
         <div className="h-[80%] w-full mb-2 ">
         <img src={image} alt="Card visual" className=" w-full h-full object-cover rounded-md " />
       </div>
-      <hr />
-      <p className="py-3 md:py-4 font-semibold">{text}</p>
+      <hr className="m-0 h-[2%] " />
+      <div className="flex p-auto items-center h-[18%] font-semibold ">{text}</div>
       </a>
     </div>
   );
@@ -28,7 +32,7 @@ export function CardItem({ image, text, link }){
 export default function Feat(){
   return (
     <div>
-      <Navbar/>
+      <Navbar current={"feats"} />
       <div className="absolute  md:top-70 top-[45%] left-[calc(50%-22.5vw)] md:left-[calc(50%-7.5vw)] ">
         <img src={dart} alt="dart_board_img" className="h-[45vw] w-[45vw]   md:h-[15vw] md:w-[15vw]  -z-3" />
       </div>
@@ -45,45 +49,53 @@ export default function Feat(){
       
        </div>
         <CardItem 
-        image="https://picsum.photos/600/360"
-        text="Python programming"
-        link="https://www.google.com"
+        image={ski}
+        text="Completed a Web Development Internship at Sri Kalaivani Industries."
+        link="https://drive.google.com/file/d/1REZm-VUDAGA82KKEnN_9FKkMcGMascSW/view?usp=drive_link"
         />
         <CardItem 
         image={react}
-        text="React JS"
+        text="React JS at Udemy"
         link="https://www.udemy.com/certificate/UC-765aa2ea-61c0-49f0-b3df-06821bf79a18/"
         />
 
-        
-        
          <CardItem 
-        image="https://picsum.photos/600/360"
-        text="Python programming"
-        link="https://www.google.com"
+        image={SQL_workshop}
+        text="SQL Workshop"
+        link="https://drive.google.com/file/d/1wNmX934K24eY23mZlYqYLQ93n_mo-RT-/view?usp=sharing"
         />
          <CardItem 
         image={sql}
-        text="Sql Database"
+        text="SQL Database at Udemy"
         link="https://www.udemy.com/certificate/UC-42a7108b-7431-458d-ad00-6d53437973e4/"
         />
          
         <CardItem 
         image={python}
-        text="Python programming"
+        text="Python programming at Udemy"
         link="https://www.udemy.com/certificate/UC-869adf7a-ce13-48ac-b584-fbaac27324ea/"
         />
          <CardItem 
-        image="https://picsum.photos/600/360"
-        text="Python programming"
-        link="https://www.google.com"
+        image={Python_quiz}
+        text="Python Quiz Competition"
+        link="https://drive.google.com/file/d/19XX9RpTzPYRz8mlvKmqoiCQwt5x7VcX4/view?usp=sharing"
         />
         <CardItem 
         image={figma}
-        text="Figma Design course"
+        text="Figma Design course at Udemy"
         link="https://www.udemy.com/certificate/UC-031edc90-8e26-43aa-af16-282f0fe413c3/"
         />
         
+        <CardItem 
+        image={verbalcommunication}
+        text="Microsoft Communication Training "
+        link="https://drive.google.com/file/d/1QWh4xG518fFee3zQ3x4yinM7KPph0KN6/view?usp=sharing"
+        />
+        <CardItem 
+        image={Maths_competition}
+        text="Maths Quiz Competition"
+        link="https://drive.google.com/file/d/19a3dUD0ZnbXsheDXJAq9yvZ6VLA6UOcu/view?usp=sharing"
+        />
         
       </div>
      

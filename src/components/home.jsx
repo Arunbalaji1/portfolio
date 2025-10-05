@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
 import heroImage from '../assets/hero.png'
 import { Typewriter } from "react-simple-typewriter";
+import download from "../assets/download.png"
+import resume from "../assets/ARUN_BALAJI_RESUME.pdf"
 import Navbar from './navbar';
 
 export default function Home(){
+
+  function handleDownload(){
+    const link = document.createElement('a');
+    link.href = resume; 
+    link.download = 'ARUN_BALAJI_Resume.pdf'; // Desired filename
+    link.click();
+   
+  }
     
   return(<>
      <Navbar/>
@@ -34,8 +44,8 @@ export default function Home(){
             </p>
           <br />
           <div className='flex md: gap-5 my-3 md:my-5 items-center justify-around md:justify-start'>
-            <Link to='/contact' className='h-9 w-full md:h-9 md:w-25  flex justify-center items-center text-[0.9rem] md:text-[0.9rem] lg:text-[1.05rem] md:text-base text-center  rounded-sm  font-semibold bg-transparent border-2 border-[#eb5e28] shadow-lg shadow-[#eb5e28]/40 ' >Hire Me</Link>
-            <Link to='/' className='h-9 w-full md:h-9 md:w-25  flex justify-center items-center text-[0.9rem] md:text-[0.9rem] lg:text-[1.05rem] md:text-base text-center  rounded-sm  font-semibold text-amber-50 bg-[#eb5e28] shadow-lg shadow-[#eb5e28]/50'>Resume</Link>
+            <Link to='/contact' className='h-9 w-full md:h-9 md:w-25 hover:bg-[#eb5e28]  flex justify-center items-center text-[0.9rem] md:text-[0.9rem] lg:text-[1.05rem] md:text-base text-center  rounded-sm  font-semibold bg-transparent border-2 border-[#eb5e28] shadow-lg shadow-[#eb5e28]/40 ' >Hire Me</Link>
+            <button onClick={handleDownload}  className='h-9 cursor-pointer w-full md:h-9 md:w-25  flex justify-center items-center text-[0.9rem] md:text-[0.9rem] lg:text-[1.05rem] md:text-base text-center  rounded-sm  font-semibold text-amber-50 bg-[#eb5e28] shadow-lg shadow-[#eb5e28]/50'>Resume  <img src={download} alt="download" className="h-5 w-5 mb-1  ml-1" /></button>
           </div>
 
         </div>

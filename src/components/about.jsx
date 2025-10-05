@@ -4,7 +4,7 @@ import profile from '../assets/profile.png'
 export default function AboutMe() {
   return (
     <div>
-      <Navbar/>
+      <Navbar current={"About"} />
       <section className="about  flex  md:justify-center md:items-center h-fit w-full p-5 md:w-auto">
         <div className="w-full md:w-fit  h-fit mt-10 md:mt-23   ring-2 ring-[#eb5e28]   rounded-2xl flex flex-col  md:flex-row bg-white/20 backdrop-blur-xs justify-around items-center">
           {/* Left image box */}

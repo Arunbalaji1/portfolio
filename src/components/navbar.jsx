@@ -75,7 +75,7 @@ export function DarkModeToggle() {
   );
 }
 
-export default function Navbar() {
+export default function Navbar({current}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -107,50 +107,76 @@ export default function Navbar() {
             isMenuOpen ? "block" : "hidden"
           } w-full md:w-auto md:flex md:items-center z-5  `}
         >
-          <ul className="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-3 lg:space-x-8 mt-4 md:mt-0 py-4 md:py-0">
+          <ul className="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-3 lg:space-x-8  md:mt-0 py-4 md:py-0">
+            
             <li>
               <Link
-                to="/about"
+                to={`${ current==="About" ? "/" : "/about"}`}
                 className="text-gray-700 dark:text-gray-200 hover:text-[rgb(235,94,40)] dark:hover:text-[rgb(235,94,40)]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About Me
+                { current==="About" ? (
+                   "Home"
+              ) : (
+                   "About Me"
+              )}
+                
               </Link>
             </li>
             <li>
               <Link
-                to="/skills"
+                to={`${ current==="skills" ? "/" : "/skills"}`}
                 className="text-gray-700 dark:text-gray-200 hover:text-[rgb(235,94,40)] dark:hover:text-[rgb(235,94,40)]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Skills
+                { current==="skills" ? (
+                   "Home"
+              ) : (
+                   "Skills"
+              )}
+                
               </Link>
             </li>
             <li>
               <Link
-                to="/projects"
+                to={`${ current==="projects" ? "/" : "/projects"}`}
                 className="text-gray-700 dark:text-gray-200 hover:text-[rgb(235,94,40)] dark:hover:text-[rgb(235,94,40)]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Projects
+                 { current==="projects" ? (
+                   "Home"
+              ) : (
+                   "Projects"
+              )}
+                
               </Link>
             </li>
             <li>
               <Link
-                to="/feats"
+                to={`${ current==="feats" ? "/" : "/feats"}`}
                 className="text-gray-700 dark:text-gray-200 hover:text-[rgb(235,94,40)] dark:hover:text-[rgb(235,94,40)]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Feats
+                 { current==="feats" ? (
+                   "Home"
+              ) : (
+                   "Feats"
+              )}
+                
               </Link>
             </li>
             <li>
               <Link
-                to="/contact"
+                to={`${ current==="contact" ? "/" : "/contact"}`}
                 className="text-gray-700 dark:text-gray-200 hover:text-[#eb5e28] dark:hover:text-[rgb(235,94,40)]"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                 { current==="contact" ? (
+                   "Home"
+              ) : (
+                   "Contact"
+              )}
+                
               </Link>
             </li>
           </ul>
@@ -162,9 +188,11 @@ export default function Navbar() {
             isMenuOpen ? "flex" : "hidden"
           } md:flex items-center space-x-3 w-full md:w-auto justify-center md:justify-end mt-4 md:mt-0 pb-4 md:pb-0`}
         >
-          <button className="py-1 px-3 rounded-sm hover:cursor-pointer  text-white text-sm md:text-[0.9rem] lg:text-[1rem] md:text-base  m-0 sm:mr-1.5">
+          <a href="https://drive.google.com/file/d/16lF-be58PIWPd_uQd8ZDLiyo1d7bayLo/view?usp=drive_link" target="_blank">
+            <button className="py-1 px-3 rounded-sm hover:cursor-pointer  text-white text-sm md:text-[0.9rem] lg:text-[1rem] md:text-base  m-0 sm:mr-1.5">
             Resume
           </button>
+          </a>
           {/* Dark mode toggle for desktop */}
           <div className="hidden md:block">
             <DarkModeToggle />

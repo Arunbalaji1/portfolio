@@ -31,7 +31,7 @@ export  function ImgBox({logo,alt}){
 
 export default function Skill(){
   return<>
-   <Navbar/>
+   <Navbar current={"skills"} />
    
     
 

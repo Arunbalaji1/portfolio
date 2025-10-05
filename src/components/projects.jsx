@@ -1,6 +1,11 @@
 
 import Navbar from './navbar';
 import vortexfitness from '../assets/projects/vortex.png';
+import rps from '../assets/projects/rps.png'
+import LTS from '../assets/projects/LTS.png'
+import portfolio from '../assets/projects/portfolio.png'
+import selenium_ecommerce from '../assets/projects/selenium_ecommerce.png'
+import bing_scraper from '../assets/projects/bing_scraper.png'
 import rocket from '../assets/rocket.png'
 import githublogo from '../assets/github-50.png'
 import globe from '../assets/globe-50.png'
@@ -86,7 +91,7 @@ export default function Projects () {
   
 
   return (<div>
-    <Navbar/>
+    <Navbar current={"projects"} />
     
     <section id="projects" className="flex flex-col justify-around h-[90vh]   " >
       
@@ -94,23 +99,26 @@ export default function Projects () {
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
           <div className='w-60 h-70  flex flex-col justify-center items-center  '>
             <img src={rocket} alt="" className='-rotate-50 h-50 w-50' />
-            <div className='text-[#eb5e28] text-4xl font-bold'>SWIPE</div>
+            <div className='text-[#eb5e28] text-4xl font-extrabold font-sans'>SWIPE</div>
           </div>
         </div>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Vortex Fitness" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['React', 'Tailwind','Tailwind','Tailwind', 'Framer Motion']} image={vortexfitness} github="https://google.com" link="https://yourprojectlink.com"/>
+          <ProjectCard title="Vortex Fitness" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['HTML', 'CSS','Bootstrap','Javascript']} image={vortexfitness} github="https://github.com/Arunbalaji1/Vortex-Fittness-Project" link="https://arunbalaji-vortexfitness.web.app/"/>
         </div>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Bing Scraper" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['React', 'Tailwind', 'Framer Motion']} image={vortexfitness} github="https://google.com" link="https://yourprojectlink.com"/>
+          <ProjectCard title="Bing Job Scraper" description="Bing Job Scraper is a Python tool that uses Selenium to fetch job listings from Bing and saves them in a files." techStack={['Python', 'Selenium', 'Pytest']} image={bing_scraper} github="https://github.com/Arunbalaji1/job-automation-suite" link="https://github.com/Arunbalaji1/job-automation-suite"/>
         </div>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Rock Paper Scissor" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['React', 'Tailwind', 'Framer Motion']} image={vortexfitness} github="https://google.com" link="https://yourprojectlink.com"/>
+          <ProjectCard title="Rock Paper Scissor" description="Rock Paper Scissor is a web game where you compete against the computer." techStack={['HTML','CSS',  'Javascript','Netlify']} image={rps} github="https://github.com/Arunbalaji1/rock-papper-scissor" link="https://arunbalaji-rpsgame.netlify.app/"/>
         </div>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Ecomerse automation" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['React', 'Tailwind', 'Framer Motion']} image={vortexfitness} github="https://google.com" link="https://yourprojectlink.com"/>
+          <ProjectCard title="Portfolio" description="Portfolio is a modern, responsive website built with React to showcase my projects, skills, and experience." techStack={['React','Tailwind','Firebase']} image={portfolio} github="https://github.com/Arunbalaji1/portfolio" link="https://arunbalajideveloper.web.app/"/>
         </div>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Task manager" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['React', 'Tailwind', 'Framer Motion']} image={vortexfitness} github="https://google.com" link="https://yourprojectlink.com"/>
+          <ProjectCard title="Ecomerse automation" description="Automated e-commerce user flows (login, search, cart, checkout) using Python and Selenium." techStack={['Python', 'Selenium', 'Pytest']} image={selenium_ecommerce} github="https://github.com/Arunbalaji1/SeleniumEcommerceProject" link="https://github.com/Arunbalaji1/SeleniumEcommerceProject"/>
+        </div>
+        <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
+          <ProjectCard title="L T S" description="A responsive restaurant website built with HTML and CSS, representing my first  web development project." techStack={['HTML', 'CSS', 'Javascript', 'Netlify']} image={LTS} github="https://littletaccoshop.netlify.app/" link="https://littletaccoshop.netlify.app/"/>
         </div>
       </div>
     </section>
