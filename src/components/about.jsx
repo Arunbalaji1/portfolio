@@ -18,7 +18,7 @@ export default function AboutMe() {
           {/* Right content box  */}
           <div className="animate-slide-leftcor indent-18 text-justify text-[3.8vw] sm:text-[1.9vw] md:text-[1.8vw] lg:text-[1.5vw]  xl:text-[1.3vw]  md:m-3   px-4 pb-4 md:p-4 rounded-md w-full md:w-[50vw] h-fit font-semibold    italic  text-black dark:text-white/80">
               <p>
-                 I am Arun Balaji, an aspiring software developer with a strong foundation in web development, automation, and problem-solving using Python and JavaScript. Currently pursuing my B.E. in Mechanical Engineering at Government College of Engineering, Erode (IRTT), I actively work on projects that blend creativity with technology, from building responsive websites and interactive applications to automating workflows with Python and Selenium.
+                 I am Arun Balaji, an aspiring  developer with a strong foundation in web development, automation, and problem-solving using Python and JavaScript. Currently pursuing my B.E. in Mechanical Engineering at Government College of Engineering, Erode (IRTT), I actively work on projects that blend creativity with technology, from building responsive websites and interactive applications to automating workflows with Python and Selenium.
              </p>
              <br />
               <p>

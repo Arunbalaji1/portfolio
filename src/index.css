@@ -27,7 +27,7 @@ h1{
 }
 
 .name{
-  font-family: "Google Sans Code", monospace;
+  font-family: "Google Sans Code", monospace ;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -77,7 +77,7 @@ nav button{
 }
 
 .animate-slide-right {
-  animation: slide-right 1.5s ease-out forwards;
+  animation: slide-right 1.5s ease-out forwards ;
 }
 
 /* slide top */
@@ -115,7 +115,7 @@ nav button{
 /* slid-right-dia */
 @keyframes slide-rightcor {
   0% {
-    transform: translate(-100%,-100%);
+    transform: translate(-30%,-30%);
     opacity: 0;
   }
   100% {
@@ -130,7 +130,7 @@ nav button{
 /* slid-left-dia */
 @keyframes slide-leftcor {
   0% {
-    transform: translate(100%,100%);
+    transform: translate(10%,10%);
     opacity: 0;
   }
   100% {
@@ -140,7 +140,7 @@ nav button{
 }
 
 .animate-slide-leftcor {
-  animation: slide-leftcor 1.5s ease-out forwards;
+  animation: slide-leftcor 1.5s ease-out forwards !important;
 }
 
 /* fade in*/
