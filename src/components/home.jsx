@@ -24,7 +24,7 @@ export default function Home(){
             <br />
             <span className="autotyping md:text-[4vw]  lg:text-[4vw]    text-[rgb(235,94,40)]">
                <Typewriter
-               words={["Web Developer", "Programer", "AI/ML Enthusiast"]}
+               words={["Web Developer", "Programmer", "AI/ML Enthusiast"]}
                loop={0} // 0 = infinite
                cursor
                cursorStyle="|"

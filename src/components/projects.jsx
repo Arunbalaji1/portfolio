@@ -115,7 +115,7 @@ export default function Projects () {
           <ProjectCard title="Portfolio" description="Portfolio is a modern, responsive website built with React to showcase my projects, skills, and experience." techStack={['React','Tailwind','Firebase']} image={portfolio} github="https://github.com/Arunbalaji1/portfolio" link="https://arunbalajideveloper.web.app/"/>
         </div>
         <div className="min-w-[400px] animate-slide-top h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Ecomerse automation" description="Automated e-commerce user flows (login, search, cart, checkout) using Python and Selenium." techStack={['Python', 'Selenium', 'Pytest']} image={selenium_ecommerce} github="https://github.com/Arunbalaji1/SeleniumEcommerceProject" link="https://github.com/Arunbalaji1/SeleniumEcommerceProject"/>
+          <ProjectCard title="E-commerce automation" description="Automated e-commerce user flows (login, search, cart, checkout) using Python and Selenium." techStack={['Python', 'Selenium', 'Pytest']} image={selenium_ecommerce} github="https://github.com/Arunbalaji1/SeleniumEcommerceProject" link="https://github.com/Arunbalaji1/SeleniumEcommerceProject"/>
         </div>
         <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="L T S" description="A responsive restaurant website built with HTML and CSS, representing my first  web development project." techStack={['HTML', 'CSS', 'Javascript', 'Netlify']} image={LTS} github="https://littletaccoshop.netlify.app/" link="https://littletaccoshop.netlify.app/"/>
