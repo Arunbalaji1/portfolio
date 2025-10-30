@@ -141,7 +141,7 @@ export  function Form() {
 export default function Contact(){
   return(
        <div>
-        <Navbar/>
+        <Navbar current={"contact"} />
         <div className="grid grid-cols-4 h-[75vh] md:pl-5 p-5  rounded-2xl mt-3 md:mt-10 md:mx-[5vw] lg:mx-[10vw] xl:mx-[15vw] md:bg-amber-50 dark:md:bg-[#203c56] md:shadow-2xl   dark:md:border-1  dark:md:border-[#6b2d14b1]">
           <div className="col-span-4  md:col-span-2 md:pl-5  flex justify-center items-center relative">
             <div className="animate-fade-out md:hidden absolute top-0">
