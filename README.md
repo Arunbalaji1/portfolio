@@ -3,7 +3,7 @@
 A personal portfolio website built using **React**, powered by **Vite** and styled with **Tailwind CSS**.  
 It showcases my projects, skills, and achievements in a clean and modern design.
 
-🔗 **View Website:** [https://arunbalajideveloper.web.app/](https://arunbalajideveloper.web.app/)
+🔗 **View Website:** [https://arunbalajideveloper.web.app/](arunbalajideveloper.web.app)
 
 ---
 
