@@ -6,7 +6,7 @@ import LTS from '../assets/projects/LTS.png'
 import portfolio from '../assets/projects/portfolio.png'
 import selenium_ecommerce from '../assets/projects/selenium_ecommerce.png'
 import bing_scraper from '../assets/projects/bing_scraper.png'
-import rocket from '../assets/rocket.png'
+import rocket from '../assets/rocket.webp'
 import githublogo from '../assets/github-50.png'
 import globe from '../assets/globe-50.png'
 
