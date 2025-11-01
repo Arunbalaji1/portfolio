@@ -1,14 +1,14 @@
 import Navbar from "./navbar";
-import dart from "../assets/dart.png"
-import figma from "../assets/certificates/figma.jpg"
-import sql from "../assets/certificates/sql.jpg"
-import python from "../assets/certificates/python.jpg"
-import react from "../assets/certificates/react.jpg"
-import ski from "../assets/certificates/ski.jpg"
-import verbalcommunication from "../assets/certificates/verbalcommunication.jpg"
-import Maths_competition from "../assets/certificates/Maths_competition.jpg"
-import Python_quiz from "../assets/certificates/Python_quiz.jpg"
-import SQL_workshop from "../assets/certificates/SQL_workshop.jpg"
+import dart from "../assets/dart.webp"
+import figma from "../assets/certificates/figma.webp"
+import sql from "../assets/certificates/sql.webp"
+import python from "../assets/certificates/python.webp"
+import react from "../assets/certificates/react.webp"
+import ski from "../assets/certificates/ski.webp"
+import verbalcommunication from "../assets/certificates/verbalcommunication.webp"
+import Maths_competition from "../assets/certificates/Maths_competition.webp"
+import Python_quiz from "../assets/certificates/Python_quiz.webp"
+import SQL_workshop from "../assets/certificates/SQL_workshop.webp"
 
 
 export function CardItem({ image, text, link }){

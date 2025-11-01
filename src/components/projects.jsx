@@ -1,14 +1,14 @@
 
 import Navbar from './navbar';
-import vortexfitness from '../assets/projects/vortex.png';
-import rps from '../assets/projects/rps.png'
-import LTS from '../assets/projects/LTS.png'
-import portfolio from '../assets/projects/portfolio.png'
-import selenium_ecommerce from '../assets/projects/selenium_ecommerce.png'
-import bing_scraper from '../assets/projects/bing_scraper.png'
+import vortexfitness from '../assets/projects/vortex.webp';
+import rps from '../assets/projects/rps.webp'
+import LTS from '../assets/projects/LTS.webp'
+import portfolio from '../assets/projects/portfolio.webp'
+import selenium_ecommerce from '../assets/projects/selenium_ecommerce.webp'
+import bing_scraper from '../assets/projects/bing_scraper.webp'
 import rocket from '../assets/rocket.webp'
-import githublogo from '../assets/github-50.png'
-import globe from '../assets/globe-50.png'
+import githublogo from '../assets/github-50.webp'
+import globe from '../assets/globe-50.webp'
 
 import { useState } from "react";
 

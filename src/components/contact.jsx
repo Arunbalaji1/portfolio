@@ -2,11 +2,11 @@ import { useState } from "react";
 import Navbar from "./navbar";
 import Tooltip from '@mui/material/Tooltip';
 
-import contact_img from "../assets/contact.png"
-import mail_img from "../assets/ssicon/mail.png"
-import phone_img from "../assets/ssicon/phone.png"
-import github_img from "../assets/ssicon/github.png"
-import linkedin_img from "../assets/ssicon/linkedin.png"
+import contact_img from "../assets/contact.webp"
+import mail_img from "../assets/ssicon/mail.webp"
+import phone_img from "../assets/ssicon/phone.webp"
+import github_img from "../assets/ssicon/github.webp"
+import linkedin_img from "../assets/ssicon/linkedin.webp"
 
 
 //Form componenet

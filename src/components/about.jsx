@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-import profile from '../assets/profile.png'
+import profile from '../assets/profile.webp'
 
 export default function AboutMe() {
   return (

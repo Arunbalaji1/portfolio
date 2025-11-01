@@ -1,5 +1,5 @@
 
-import notfound from '../assets/onee.png'
+import notfound from '../assets/404.webp'
 
 
 import { Link } from 'react-router-dom'; // Optional: if you're using React Router

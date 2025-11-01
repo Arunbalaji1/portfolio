@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import heroImage from '../assets/hero.png'
+import heroImage from '../assets/hero.webp'
 import { Typewriter } from "react-simple-typewriter";
-import download from "../assets/download.png"
+import download from "../assets/download.webp"
 import resume from "../assets/ARUN_BALAJI_RESUME.pdf"
 import Navbar from './navbar';
 
