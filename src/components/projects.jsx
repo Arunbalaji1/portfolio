@@ -136,7 +136,7 @@ export default function Projects () {
           <ProjectCard title="L T S" description="A responsive restaurant website built with HTML and CSS, representing my first  web development project." techStack={['HTML', 'CSS', 'Javascript', 'Netlify']} image={LTS} github="https://littletaccoshop.netlify.app/" link="https://littletaccoshop.netlify.app/"/>
         </div>
       </div>
-      <div className="w-[100%] flex justify-center items-center">
+      <div className="hidden  w-[100%] md:flex justify-center items-center">
           {/* Left Button */}
           <button
             onClick={scrollLeft}
