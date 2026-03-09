@@ -1,4 +1,4 @@
-
+import { useRef } from "react";
 import Navbar from './navbar';
 import vortexfitness from '../assets/projects/vortex.webp';
 import rps from '../assets/projects/rps.webp'
@@ -88,6 +88,21 @@ export function ProjectCard({ title, description, techStack, image, github, link
 
 
 export default function Projects () {
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({
+      left: -400,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({
+      left: 400,
+      behavior: "smooth",
+    });
+  };
   
 
   return (<div>
@@ -95,7 +110,7 @@ export default function Projects () {
     
     <section id="projects" className="flex flex-col justify-around h-[90vh]   " >
       
-      <div className="flex overflow-x-auto space-x-4 p-4 scroll-smooth rounded-xl hide-scrollbar ">
+      <div className="flex overflow-x-auto space-x-4 p-4 scroll-smooth rounded-xl hide-scrollbar " ref={scrollRef}>
         <div className="min-w-[400px] h-fit p-5 flex items-center justify-center rounded-lg">
           <div className='w-60 h-70  flex flex-col justify-center items-center  '>
             <img src={rocket} alt="" className='-rotate-50 h-50 w-50 animate-floatZ' />
@@ -106,7 +121,7 @@ export default function Projects () {
           <ProjectCard title="Vortex Fitness" description="A sleek fitness landing page with responsive design and smooth animations." techStack={['HTML', 'CSS','Bootstrap','Javascript']} image={vortexfitness} github="https://github.com/Arunbalaji1/Vortex-Fittness-Project" link="https://arunbalaji-vortexfitness.web.app/"/>
         </div>
         <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
-          <ProjectCard title="Bing Job Scraper" description="Bing Job Scraper is a Python tool that uses Selenium to fetch job listings from Bing and saves them in a files." techStack={['Python', 'Selenium', 'Pytest']} image={bing_scraper} github="https://github.com/Arunbalaji1/job-automation-suite" link="https://github.com/Arunbalaji1/job-automation-suite"/>
+          <ProjectCard title="Bing Job Scraper" description="Bing Job Scraper is a Python tool that uses Selenium to fetch job listings from Bing and saves them in a files." techStack={['Python', 'Selenium', 'Pytest']} image={bing_scraper} github="https://github.com/Arunbalaji1/bing_job_scraper" link="https://github.com/Arunbalaji1/bing_job_scraper"/>
         </div>
         <div className="min-w-[400px] animate-slide-top h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="Rock Paper Scissor" description="Rock Paper Scissor is a web game where you compete against the computer." techStack={['HTML','CSS',  'Javascript','Netlify']} image={rps} github="https://github.com/Arunbalaji1/rock-papper-scissor" link="https://arunbalaji-rpsgame.netlify.app/"/>
@@ -120,6 +135,24 @@ export default function Projects () {
         <div className="min-w-[400px] animate-slide-bottom h-fit p-5 flex items-center justify-center rounded-lg">
           <ProjectCard title="L T S" description="A responsive restaurant website built with HTML and CSS, representing my first  web development project." techStack={['HTML', 'CSS', 'Javascript', 'Netlify']} image={LTS} github="https://littletaccoshop.netlify.app/" link="https://littletaccoshop.netlify.app/"/>
         </div>
+      </div>
+      <div className="w-[100%] flex justify-center items-center">
+          {/* Left Button */}
+          <button
+            onClick={scrollLeft}
+            className="   bg-[#eb5e28]/95 text-white text-[25px] hover:scale-110  h-8 w-8 rounded-md hover:bg-[#eb5e28] hover:cursor-pointer mx-30 mb-1"
+          >
+            ❮
+          </button>
+
+          {/* Right Button */}
+          <button
+            onClick={scrollRight}
+            className="    bg-[#eb5e28]/95 text-white text-[25px] hover:scale-110 h-8 w-8 rounded-md hover:bg-[#eb5e28]  hover:cursor-pointer mx-30 mb-1"
+          >
+            ❯
+          </button>
+
       </div>
     </section>
     </div>
